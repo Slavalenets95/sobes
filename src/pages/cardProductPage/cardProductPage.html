@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <mainHeader></mainHeader>
+    <div class="opacity" ></div>
+    <main>
+        <div class="preview">
+            <div id="preview-carousel" class="carousel slide preview-carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="#" class="preview-carousel__link">
+                            <img class="preview-carousel__img" src="../../assets/preview-carousel-img.jpg" alt="some alt">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="#" class="preview-carousel__link">
+                            <img class="preview-carousel__img" src="../../assets/preview-carousel-img.jpg" alt="some alt">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="#" class="preview-carousel__link">
+                            <img class="preview-carousel__img" src="../../assets/preview-carousel-img.jpg" alt="some alt">
+                        </a>
+                    </div>
+                </div>
+                <button class="preview-carousel__prev-btn preview-carousel__control-btn" data-bs-target="#preview-carousel"
+                   data-bs-slide="prev">
+                    <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.606171 10.4047C0.0203839 10.9905 0.0203838 11.9403 0.606171 12.5261L10.1521 22.072C10.7379 22.6578 11.6876 22.6578 12.2734 22.072C12.8592 21.4862 12.8592 20.5365 12.2734 19.9507L3.78815 11.4654L12.2734 2.98011C12.8592 2.39432 12.8592 1.44458 12.2734 0.85879C11.6876 0.273003 10.7379 0.273003 10.1521 0.85879L0.606171 10.4047ZM23.3335 9.96539L1.66683 9.96539L1.66683 12.9654L23.3335 12.9654L23.3335 9.96539Z"
+                            fill="white" />
+                    </svg>
+                </button>
+                <button class="preview-carousel__next-btn preview-carousel__control-btn" data-bs-target="#preview-carousel"
+                     data-bs-slide="next">
+                    <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M23.3943 12.526C23.9801 11.9402 23.9801 10.9905 23.3943 10.4047L13.8484 0.85873C13.2626 0.272943 12.3128 0.272943 11.7271 0.85873C11.1413 1.44452 11.1413 2.39426 11.7271 2.98005L20.2123 11.4653L11.7271 19.9506C11.1413 20.5364 11.1413 21.4861 11.7271 22.0719C12.3128 22.6577 13.2626 22.6577 13.8484 22.0719L23.3943 12.526ZM0.666992 12.9653H22.3337V9.96533H0.666992V12.9653Z"
+                            fill="white" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <section class="week-products container-lg">
+            <div class="row">
+                <div class="col-12"><h2 class="title">Товары недели</h2></div>
+            </div>
+            <div class="row">
+                <div class="col-12 card-block d-flex justify-content-between">
+                        <div class="card-block__card card d-flex">
+                            <a class="card__content d-flex flex-column align-items-center" href="#">
+                                <span class="card__code">Артикул: 559141</span>
+                                <img src="../../assets/card-img-1.png" alt="some alt" class="card__img">
+                                <p class="card__descr">Ремешок для Apple Watch 38mm тканевый на липучке оранжевый</p>
+                                <div class="price-block">
+                                    <span class="price-block__price">1290 ₽</span>
+                                </div>
+                            </a>
+                            <div class="card__hover-block justify-content-between flex-wrap">
+                                <button class="card__basket-btn btn-main">В корзину</button>
+                                <button class="card__order-btn btn-main">Заказ в 1 клик</button>
+                                <p class="card__delivery"><a href="#" class="card__delivery-link">Условия доставки</a></p>
+                            </div>
+                            <svg class="card__loupe-icon card__icon" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="6.54583" cy="6.54583" r="6.04583" stroke="#757575"/>
+                                <line x1="10.8721" y1="11.3786" x2="17.4844" y2="17.9909" stroke="#757575"/>
+                                <line x1="4" y1="6.5" x2="9" y2="6.5" stroke="#757575"/>
+                                <line x1="6.5" y1="9" x2="6.5" y2="4" stroke="#757575"/>
+                            </svg>
+                            <svg class="card__like-icon card__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.8373 0C10.1125 0 8.62937 1.09681 8 2.65479C7.3702 1.09681 5.8864 0 4.16078 0C1.86662 0 0 1.93959 0 4.32381C0 5.24389 0.285883 6.1309 0.834005 6.89883L7.74829 15.8744C7.80955 15.9537 7.90198 16 8 16H8.00021C8.09823 16 8.19088 15.9535 8.25192 15.874L15.3158 6.67227C15.3225 6.66333 15.3291 6.65395 15.3352 6.64434C15.77 5.94009 16 5.13754 16 4.32381C16.0002 1.93959 14.1325 0 11.8373 0ZM14.8014 6.26809L7.99957 15.1284L1.34451 6.48973C0.886668 5.84782 0.644634 5.09888 0.644634 4.32381C0.644634 2.30914 2.22194 0.670288 4.16057 0.670288C6.09984 0.670288 7.67757 2.30914 7.67757 4.32381C7.67757 4.50903 7.82181 4.65895 8 4.65895C8.17819 4.65895 8.32242 4.50903 8.32242 4.32381C8.32242 2.30914 9.89908 0.670288 11.8373 0.670288C13.777 0.670288 15.3554 2.30914 15.3554 4.32381C15.3554 5.0037 15.1638 5.67555 14.8014 6.26809Z" fill="#757575"/>
+                            </svg>        
+                        </div>
+                        <div class="card-block__card card d-flex">
+                            <a class="card__content d-flex flex-column align-items-center" href="#">
+                                <span class="card__code">Артикул: 559141</span>
+                                <img src="../../assets/card-img-2.png" alt="some alt" class="card__img">
+                                <p class="card__descr">Ремешок для Apple Watch 38mm тканевый на липучке оранжевый</p>
+                                <div class="price-block">
+                                    <span class="price-block__price price-block__price--discount">1290 ₽</span>
+                                    <del class="price-block__old-price">1000 ₽</del>
+                                    <span class="price-block__discount-procent">-11%</span>
+                                </div>
+                            </a>
+                            <div class="card__hover-block justify-content-between flex-wrap">
+                                <button class="card__basket-btn btn-main">В корзину</button>
+                                <button class="card__order-btn btn-main">Заказ в 1 клик</button>
+                                <p class="card__delivery"><a href="#" class="card__delivery-link">Условия доставки</a></p>
+                            </div>
+                            <svg class="card__loupe-icon card__icon" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="6.54583" cy="6.54583" r="6.04583" stroke="#757575"/>
+                                <line x1="10.8721" y1="11.3786" x2="17.4844" y2="17.9909" stroke="#757575"/>
+                                <line x1="4" y1="6.5" x2="9" y2="6.5" stroke="#757575"/>
+                                <line x1="6.5" y1="9" x2="6.5" y2="4" stroke="#757575"/>
+                            </svg>
+                            <svg class="card__like-icon card__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.8373 0C10.1125 0 8.62937 1.09681 8 2.65479C7.3702 1.09681 5.8864 0 4.16078 0C1.86662 0 0 1.93959 0 4.32381C0 5.24389 0.285883 6.1309 0.834005 6.89883L7.74829 15.8744C7.80955 15.9537 7.90198 16 8 16H8.00021C8.09823 16 8.19088 15.9535 8.25192 15.874L15.3158 6.67227C15.3225 6.66333 15.3291 6.65395 15.3352 6.64434C15.77 5.94009 16 5.13754 16 4.32381C16.0002 1.93959 14.1325 0 11.8373 0ZM14.8014 6.26809L7.99957 15.1284L1.34451 6.48973C0.886668 5.84782 0.644634 5.09888 0.644634 4.32381C0.644634 2.30914 2.22194 0.670288 4.16057 0.670288C6.09984 0.670288 7.67757 2.30914 7.67757 4.32381C7.67757 4.50903 7.82181 4.65895 8 4.65895C8.17819 4.65895 8.32242 4.50903 8.32242 4.32381C8.32242 2.30914 9.89908 0.670288 11.8373 0.670288C13.777 0.670288 15.3554 2.30914 15.3554 4.32381C15.3554 5.0037 15.1638 5.67555 14.8014 6.26809Z" fill="#757575"/>
+                            </svg>   
+                        </div>
+                        <div class="card-block__card card d-flex">
+                            <a class="card__content d-flex flex-column align-items-center" href="#">
+                                <span class="card__code">Артикул: 559141</span>
+                                <img src="../../assets/card-img-3.png" alt="some alt" class="card__img">
+                                <p class="card__descr">Ремешок для Apple Watch 38mm тканевый на липучке оранжевый</p>
+                                <div class="price-block">
+                                    <span class="price-block__price">1290 ₽</span>
+                                </div>
+                            </a>
+                            <div class="card__hover-block justify-content-between flex-wrap">
+                                <button class="card__basket-btn btn-main">В корзину</button>
+                                <button class="card__order-btn btn-main">Заказ в 1 клик</button>
+                                <p class="card__delivery"><a href="#" class="card__delivery-link">Условия доставки</a></p>
+                            </div>
+                            <svg class="card__loupe-icon card__icon" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="6.54583" cy="6.54583" r="6.04583" stroke="#757575"/>
+                                <line x1="10.8721" y1="11.3786" x2="17.4844" y2="17.9909" stroke="#757575"/>
+                                <line x1="4" y1="6.5" x2="9" y2="6.5" stroke="#757575"/>
+                                <line x1="6.5" y1="9" x2="6.5" y2="4" stroke="#757575"/>
+                            </svg>
+                            <svg class="card__like-icon card__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.8373 0C10.1125 0 8.62937 1.09681 8 2.65479C7.3702 1.09681 5.8864 0 4.16078 0C1.86662 0 0 1.93959 0 4.32381C0 5.24389 0.285883 6.1309 0.834005 6.89883L7.74829 15.8744C7.80955 15.9537 7.90198 16 8 16H8.00021C8.09823 16 8.19088 15.9535 8.25192 15.874L15.3158 6.67227C15.3225 6.66333 15.3291 6.65395 15.3352 6.64434C15.77 5.94009 16 5.13754 16 4.32381C16.0002 1.93959 14.1325 0 11.8373 0ZM14.8014 6.26809L7.99957 15.1284L1.34451 6.48973C0.886668 5.84782 0.644634 5.09888 0.644634 4.32381C0.644634 2.30914 2.22194 0.670288 4.16057 0.670288C6.09984 0.670288 7.67757 2.30914 7.67757 4.32381C7.67757 4.50903 7.82181 4.65895 8 4.65895C8.17819 4.65895 8.32242 4.50903 8.32242 4.32381C8.32242 2.30914 9.89908 0.670288 11.8373 0.670288C13.777 0.670288 15.3554 2.30914 15.3554 4.32381C15.3554 5.0037 15.1638 5.67555 14.8014 6.26809Z" fill="#757575"/>
+                            </svg>   
+                        </div>
+                        <div class="card-block__card card d-flex">
+                            <a class="card__content d-flex flex-column align-items-center" href="#">
+                                <span class="card__code">Артикул: 559141</span>
+                                <img src="../../assets/card-img-4.png" alt="some alt" class="card__img">
+                                <p class="card__descr">Ремешок для Apple Watch 38mm тканевый на липучке оранжевый</p>
+                                <div class="price-block">
+                                    <span class="price-block__price">1290 ₽</span>
+                                </div>
+                            </a>
+                            <div class="card__hover-block justify-content-between flex-wrap">
+                                <button class="card__basket-btn btn-main">В корзину</button>
+                                <button class="card__order-btn btn-main">Заказ в 1 клик</button>
+                                <p class="card__delivery"><a href="#" class="card__delivery-link">Условия доставки</a></p>
+                            </div>
+                            <svg class="card__loupe-icon card__icon" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="6.54583" cy="6.54583" r="6.04583" stroke="#757575"/>
+                                <line x1="10.8721" y1="11.3786" x2="17.4844" y2="17.9909" stroke="#757575"/>
+                                <line x1="4" y1="6.5" x2="9" y2="6.5" stroke="#757575"/>
+                                <line x1="6.5" y1="9" x2="6.5" y2="4" stroke="#757575"/>
+                            </svg>
+                            <svg class="card__like-icon card__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.8373 0C10.1125 0 8.62937 1.09681 8 2.65479C7.3702 1.09681 5.8864 0 4.16078 0C1.86662 0 0 1.93959 0 4.32381C0 5.24389 0.285883 6.1309 0.834005 6.89883L7.74829 15.8744C7.80955 15.9537 7.90198 16 8 16H8.00021C8.09823 16 8.19088 15.9535 8.25192 15.874L15.3158 6.67227C15.3225 6.66333 15.3291 6.65395 15.3352 6.64434C15.77 5.94009 16 5.13754 16 4.32381C16.0002 1.93959 14.1325 0 11.8373 0ZM14.8014 6.26809L7.99957 15.1284L1.34451 6.48973C0.886668 5.84782 0.644634 5.09888 0.644634 4.32381C0.644634 2.30914 2.22194 0.670288 4.16057 0.670288C6.09984 0.670288 7.67757 2.30914 7.67757 4.32381C7.67757 4.50903 7.82181 4.65895 8 4.65895C8.17819 4.65895 8.32242 4.50903 8.32242 4.32381C8.32242 2.30914 9.89908 0.670288 11.8373 0.670288C13.777 0.670288 15.3554 2.30914 15.3554 4.32381C15.3554 5.0037 15.1638 5.67555 14.8014 6.26809Z" fill="#757575"/>
+                            </svg>   
+                        </div>
+                        <div class="card-block__card card d-flex">
+                            <a class="card__content d-flex flex-column align-items-center" href="#">
+                                <span class="card__code">Артикул: 559141</span>
+                                <img src="../../assets/card-img-1.png" alt="some alt" class="card__img">
+                                <p class="card__descr">Ремешок для Apple Watch 38mm тканевый на липучке оранжевый</p>
+                                <div class="price-block">
+                                    <span class="price-block__price">1290 ₽</span>
+                                </div>
+                            </a>
+                            <div class="card__hover-block justify-content-between flex-wrap">
+                                <button class="card__basket-btn btn-main">В корзину</button>
+                                <button class="card__order-btn btn-main">Заказ в 1 клик</button>
+                                <p class="card__delivery"><a href="#" class="card__delivery-link">Условия доставки</a></p>
+                            </div>
+                            <svg class="card__loupe-icon card__icon" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="6.54583" cy="6.54583" r="6.04583" stroke="#757575"/>
+                                <line x1="10.8721" y1="11.3786" x2="17.4844" y2="17.9909" stroke="#757575"/>
+                                <line x1="4" y1="6.5" x2="9" y2="6.5" stroke="#757575"/>
+                                <line x1="6.5" y1="9" x2="6.5" y2="4" stroke="#757575"/>
+                            </svg>
+                            <svg class="card__like-icon card__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.8373 0C10.1125 0 8.62937 1.09681 8 2.65479C7.3702 1.09681 5.8864 0 4.16078 0C1.86662 0 0 1.93959 0 4.32381C0 5.24389 0.285883 6.1309 0.834005 6.89883L7.74829 15.8744C7.80955 15.9537 7.90198 16 8 16H8.00021C8.09823 16 8.19088 15.9535 8.25192 15.874L15.3158 6.67227C15.3225 6.66333 15.3291 6.65395 15.3352 6.64434C15.77 5.94009 16 5.13754 16 4.32381C16.0002 1.93959 14.1325 0 11.8373 0ZM14.8014 6.26809L7.99957 15.1284L1.34451 6.48973C0.886668 5.84782 0.644634 5.09888 0.644634 4.32381C0.644634 2.30914 2.22194 0.670288 4.16057 0.670288C6.09984 0.670288 7.67757 2.30914 7.67757 4.32381C7.67757 4.50903 7.82181 4.65895 8 4.65895C8.17819 4.65895 8.32242 4.50903 8.32242 4.32381C8.32242 2.30914 9.89908 0.670288 11.8373 0.670288C13.777 0.670288 15.3554 2.30914 15.3554 4.32381C15.3554 5.0037 15.1638 5.67555 14.8014 6.26809Z" fill="#757575"/>
+                            </svg>   
+                        </div>                
+               </div>
+            </div>
+        </section>
+        <div class="promotion container-lg">
+            <div class="row">
+                <div class="col-12 col-lg-8 d-flex">
+                    <a href="#"><img class="promotion__img" src="../../assets/promotion-img-1.png" alt="some alt"></a>
+                </div>
+                <div class="col-6 col-lg-4 d-flex mt-3 mt-lg-0">
+                    <a href="#"><img class="promotion__img" src="../../assets/promotion-img-2.png" alt="some alt"></a>
+                </div>
+                <div class="col-6 col-lg-4 d-flex mt-3">
+                    <a href=""><img class="promotion__img" src="../../assets/promotion-img-3.png" alt="some alt"></a>
+                </div>
+                <div class="col-12 col-lg-8 d-flex mt-3">
+                    <a href=""><img class="promotion__img" src="../../assets/promotion-img-4.png" alt="some alt"></a>
+                </div>
+            </div>
+        </div>
+        <section class="exclusively container-lg">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="exclusively__title title">Эксклюзивно</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 exclusively__content-block">
+                    <div class="row">
+                        <div class="col-6 col-md-3 col-lg-12">
+                            <div class="row align-items-center">
+                                <div class="col-12 col-lg-4 d-flex flex-column align-items-center align-items-lg-start">
+                                    <img src="../../assets/exclusively-img-1.png" alt="" class="exclusively__img">
+                                </div>
+                                <div class="col-8 d-none card-block d-lg-flex justify-content-between">
+                                    <div class="card-block__card card d-flex">
+                                        <a class="card__content d-flex flex-column align-items-center" href="#">
+                                            <span class="card__code">Артикул: 559141</span>
+                                            <img src="../../assets/card-img-3.png" alt="some alt" class="card__img">
+                                            <p class="card__descr">Ремешок для Apple Watch 38mm тканевый на липучке оранжевый</p>
+                                            <div class="price-block">
+                                                <span class="price-block__price price-block__price--discount">890 ₽</span>
+                                                <del class="price-block__old-price">1000 ₽</del>
+                                                <span class="price-block__discount-procent">-11%</span>
+                                            </div>
+                                        </a>
+                                        <div class="card__hover-block justify-content-between flex-wrap">
+                                            <button class="card__basket-btn btn-main">В корзину</button>
+                                            <button class="card__order-btn btn-main">Заказ в 1 клик</button>
+                                            <p class="card__delivery"><a href="#" class="card__delivery-link">Условия доставки</a></p>
+                                        </div>
+                                        <svg class="card__loupe-icon card__icon" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="6.54583" cy="6.54583" r="6.04583" stroke="#757575"/>
+                                            <line x1="10.8721" y1="11.3786" x2="17.4844" y2="17.9909" stroke="#757575"/>
+                                            <line x1="4" y1="6.5" x2="9" y2="6.5" stroke="#757575"/>
+                                            <line x1="6.5" y1="9" x2="6.5" y2="4" stroke="#757575"/>
+                                        </svg>
+                                        <svg class="card__like-icon card__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.8373 0C10.1125 0 8.62937 1.09681 8 2.65479C7.3702 1.09681 5.8864 0 4.16078 0C1.86662 0 0 1.93959 0 4.32381C0 5.24389 0.285883 6.1309 0.834005 6.89883L7.74829 15.8744C7.80955 15.9537 7.90198 16 8 16H8.00021C8.09823 16 8.19088 15.9535 8.25192 15.874L15.3158 6.67227C15.3225 6.66333 15.3291 6.65395 15.3352 6.64434C15.77 5.94009 16 5.13754 16 4.32381C16.0002 1.93959 14.1325 0 11.8373 0ZM14.8014 6.26809L7.99957 15.1284L1.34451 6.48973C0.886668 5.84782 0.644634 5.09888 0.644634 4.32381C0.644634 2.30914 2.22194 0.670288 4.16057 0.670288C6.09984 0.670288 7.67757 2.30914 7.67757 4.32381C7.67757 4.50903 7.82181 4.65895 8 4.65895C8.17819 4.65895 8.32242 4.50903 8.32242 4.32381C8.32242 2.30914 9.89908 0.670288 11.8373 0.670288C13.777 0.670288 15.3554 2.30914 15.3554 4.32381C15.3554 5.0037 15.1638 5.67555 14.8014 6.26809Z" fill="#757575"/>
+                                        </svg>   
+                                    </div>
+                                    <div class="card-block__card card d-flex">
+                                        <a class="card__content d-flex flex-column align-items-center" href="#">
+                                            <span class="card__code">Артикул: 559141</span>
+                                            <img src="../../assets/card-img-4.png" alt="some alt" class="card__img">
+                                            <p class="card__descr">Ремешок для Apple Watch 38mm тканевый на липучке оранжевый</p>
+                                            <div class="price-block">
+                                                <span class="price-block__price">1290 ₽</span>
+                                            </div>
+                                        </a>
+                                        <div class="card__hover-block justify-content-between flex-wrap">
+                                            <button class="card__basket-btn btn-main">В корзину</button>
+                                            <button class="card__order-btn btn-main">Заказ в 1 клик</button>
+                                            <p class="card__delivery"><a href="#" class="card__delivery-link">Условия доставки</a></p>
+                                        </div>
+                                        <svg class="card__loupe-icon card__icon" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="6.54583" cy="6.54583" r="6.04583" stroke="#757575"/>
+                                            <line x1="10.8721" y1="11.3786" x2="17.4844" y2="17.9909" stroke="#757575"/>
+                                            <line x1="4" y1="6.5" x2="9" y2="6.5" stroke="#757575"/>
+                                            <line x1="6.5" y1="9" x2="6.5" y2="4" stroke="#757575"/>
+                                        </svg>
+                                        <svg class="card__like-icon card__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.8373 0C10.1125 0 8.62937 1.09681 8 2.65479C7.3702 1.09681 5.8864 0 4.16078 0C1.86662 0 0 1.93959 0 4.32381C0 5.24389 0.285883 6.1309 0.834005 6.89883L7.74829 15.8744C7.80955 15.9537 7.90198 16 8 16H8.00021C8.09823 16 8.19088 15.9535 8.25192 15.874L15.3158 6.67227C15.3225 6.66333 15.3291 6.65395 15.3352 6.64434C15.77 5.94009 16 5.13754 16 4.32381C16.0002 1.93959 14.1325 0 11.8373 0ZM14.8014 6.26809L7.99957 15.1284L1.34451 6.48973C0.886668 5.84782 0.644634 5.09888 0.644634 4.32381C0.644634 2.30914 2.22194 0.670288 4.16057 0.670288C6.09984 0.670288 7.67757 2.30914 7.67757 4.32381C7.67757 4.50903 7.82181 4.65895 8 4.65895C8.17819 4.65895 8.32242 4.50903 8.32242 4.32381C8.32242 2.30914 9.89908 0.670288 11.8373 0.670288C13.777 0.670288 15.3554 2.30914 15.3554 4.32381C15.3554 5.0037 15.1638 5.67555 14.8014 6.26809Z" fill="#757575"/>
+                                        </svg>   
+                                    </div>
+                                    <div class="card-block__card card d-flex">
+                                        <a class="card__content d-flex flex-column align-items-center" href="#">
+                                            <span class="card__code">Артикул: 559141</span>
+                                            <img src="../../assets/card-img-1.png" alt="some alt" class="card__img">
+                                            <p class="card__descr">Ремешок для Apple Watch 38mm тканевый на липучке оранжевый</p>
+                                            <div class="price-block">
+                                                <span class="price-block__price">1290 ₽</span>
+                                            </div>
+                                        </a>
+                                        <div class="card__hover-block justify-content-between flex-wrap">
+                                            <button class="card__basket-btn btn-main">В корзину</button>
+                                            <button class="card__order-btn btn-main">Заказ в 1 клик</button>
+                                            <p class="card__delivery"><a href="#" class="card__delivery-link">Условия доставки</a></p>
+                                        </div>
+                                        <svg class="card__loupe-icon card__icon" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="6.54583" cy="6.54583" r="6.04583" stroke="#757575"/>
+                                            <line x1="10.8721" y1="11.3786" x2="17.4844" y2="17.9909" stroke="#757575"/>
+                                            <line x1="4" y1="6.5" x2="9" y2="6.5" stroke="#757575"/>
+                                            <line x1="6.5" y1="9" x2="6.5" y2="4" stroke="#757575"/>
+                                        </svg>
+                                        <svg class="card__like-icon card__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.8373 0C10.1125 0 8.62937 1.09681 8 2.65479C7.3702 1.09681 5.8864 0 4.16078 0C1.86662 0 0 1.93959 0 4.32381C0 5.24389 0.285883 6.1309 0.834005 6.89883L7.74829 15.8744C7.80955 15.9537 7.90198 16 8 16H8.00021C8.09823 16 8.19088 15.9535 8.25192 15.874L15.3158 6.67227C15.3225 6.66333 15.3291 6.65395 15.3352 6.64434C15.77 5.94009 16 5.13754 16 4.32381C16.0002 1.93959 14.1325 0 11.8373 0ZM14.8014 6.26809L7.99957 15.1284L1.34451 6.48973C0.886668 5.84782 0.644634 5.09888 0.644634 4.32381C0.644634 2.30914 2.22194 0.670288 4.16057 0.670288C6.09984 0.670288 7.67757 2.30914 7.67757 4.32381C7.67757 4.50903 7.82181 4.65895 8 4.65895C8.17819 4.65895 8.32242 4.50903 8.32242 4.32381C8.32242 2.30914 9.89908 0.670288 11.8373 0.670288C13.777 0.670288 15.3554 2.30914 15.3554 4.32381C15.3554 5.0037 15.1638 5.67555 14.8014 6.26809Z" fill="#757575"/>
+                                        </svg>   
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-12">
+                            <div class="row align-items-center">
+                                <div class="col-12 col-lg-4 d-flex flex-column align-items-center align-items-lg-start">
+                                    <img src="../../assets/exclusively-img-2.png" alt="" class="exclusively__img">
+                                </div>
+                                <div class="col-8 d-none card-block d-lg-flex justify-content-between">
+                                    <div class="card-block__card card d-flex">
+                                        <a class="card__content d-flex flex-column align-items-center" href="#">
+                                            <span class="card__code">Артикул: 559141</span>
+                                            <img src="../../assets/card-img-3.png" alt="some alt" class="card__img">
+                                            <p class="card__descr">Ремешок для Apple Watch 38mm тканевый на липучке оранжевый</p>
+                                            <div class="price-block">
+                                                <span class="price-block__price price-block__price--discount">890 ₽</span>
+                                                <del class="price-block__old-price">1000 ₽</del>
+                                                <span class="price-block__discount-procent">-11%</span>
+                                            </div>
+                                        </a>
+                                        <div class="card__hover-block justify-content-between flex-wrap">
+                                            <button class="card__basket-btn btn-main">В корзину</button>
+                                            <button class="card__order-btn btn-main">Заказ в 1 клик</button>
+                                            <p class="card__delivery"><a href="#" class="card__delivery-link">Условия доставки</a></p>
+                                        </div>
+                                        <svg class="card__loupe-icon card__icon" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="6.54583" cy="6.54583" r="6.04583" stroke="#757575"/>
+                                            <line x1="10.8721" y1="11.3786" x2="17.4844" y2="17.9909" stroke="#757575"/>
+                                            <line x1="4" y1="6.5" x2="9" y2="6.5" stroke="#757575"/>
+                                            <line x1="6.5" y1="9" x2="6.5" y2="4" stroke="#757575"/>
+                                        </svg>
+                                        <svg class="card__like-icon card__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.8373 0C10.1125 0 8.62937 1.09681 8 2.65479C7.3702 1.09681 5.8864 0 4.16078 0C1.86662 0 0 1.93959 0 4.32381C0 5.24389 0.285883 6.1309 0.834005 6.89883L7.74829 15.8744C7.80955 15.9537 7.90198 16 8 16H8.00021C8.09823 16 8.19088 15.9535 8.25192 15.874L15.3158 6.67227C15.3225 6.66333 15.3291 6.65395 15.3352 6.64434C15.77 5.94009 16 5.13754 16 4.32381C16.0002 1.93959 14.1325 0 11.8373 0ZM14.8014 6.26809L7.99957 15.1284L1.34451 6.48973C0.886668 5.84782 0.644634 5.09888 0.644634 4.32381C0.644634 2.30914 2.22194 0.670288 4.16057 0.670288C6.09984 0.670288 7.67757 2.30914 7.67757 4.32381C7.67757 4.50903 7.82181 4.65895 8 4.65895C8.17819 4.65895 8.32242 4.50903 8.32242 4.32381C8.32242 2.30914 9.89908 0.670288 11.8373 0.670288C13.777 0.670288 15.3554 2.30914 15.3554 4.32381C15.3554 5.0037 15.1638 5.67555 14.8014 6.26809Z" fill="#757575"/>
+                                        </svg>   
+                                    </div>
+                                    <div class="card-block__card card d-flex">
+                                        <a class="card__content d-flex flex-column align-items-center" href="#">
+                                            <span class="card__code">Артикул: 559141</span>
+                                            <img src="../../assets/card-img-4.png" alt="some alt" class="card__img">
+                                            <p class="card__descr">Ремешок для Apple Watch 38mm тканевый на липучке оранжевый</p>
+                                            <div class="price-block">
+                                                <span class="price-block__price">1290 ₽</span>
+                                            </div>
+                                        </a>
+                                        <div class="card__hover-block justify-content-between flex-wrap">
+                                            <button class="card__basket-btn btn-main">В корзину</button>
+                                            <button class="card__order-btn btn-main">Заказ в 1 клик</button>
+                                            <p class="card__delivery"><a href="#" class="card__delivery-link">Условия доставки</a></p>
+                                        </div>
+                                        <svg class="card__loupe-icon card__icon" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="6.54583" cy="6.54583" r="6.04583" stroke="#757575"/>
+                                            <line x1="10.8721" y1="11.3786" x2="17.4844" y2="17.9909" stroke="#757575"/>
+                                            <line x1="4" y1="6.5" x2="9" y2="6.5" stroke="#757575"/>
+                                            <line x1="6.5" y1="9" x2="6.5" y2="4" stroke="#757575"/>
+                                        </svg>
+                                        <svg class="card__like-icon card__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.8373 0C10.1125 0 8.62937 1.09681 8 2.65479C7.3702 1.09681 5.8864 0 4.16078 0C1.86662 0 0 1.93959 0 4.32381C0 5.24389 0.285883 6.1309 0.834005 6.89883L7.74829 15.8744C7.80955 15.9537 7.90198 16 8 16H8.00021C8.09823 16 8.19088 15.9535 8.25192 15.874L15.3158 6.67227C15.3225 6.66333 15.3291 6.65395 15.3352 6.64434C15.77 5.94009 16 5.13754 16 4.32381C16.0002 1.93959 14.1325 0 11.8373 0ZM14.8014 6.26809L7.99957 15.1284L1.34451 6.48973C0.886668 5.84782 0.644634 5.09888 0.644634 4.32381C0.644634 2.30914 2.22194 0.670288 4.16057 0.670288C6.09984 0.670288 7.67757 2.30914 7.67757 4.32381C7.67757 4.50903 7.82181 4.65895 8 4.65895C8.17819 4.65895 8.32242 4.50903 8.32242 4.32381C8.32242 2.30914 9.89908 0.670288 11.8373 0.670288C13.777 0.670288 15.3554 2.30914 15.3554 4.32381C15.3554 5.0037 15.1638 5.67555 14.8014 6.26809Z" fill="#757575"/>
+                                        </svg>   
+                                    </div>
+                                    <div class="card-block__card card d-flex">
+                                        <a class="card__content d-flex flex-column align-items-center" href="#">
+                                            <span class="card__code">Артикул: 559141</span>
+                                            <img src="../../assets/card-img-1.png" alt="some alt" class="card__img">
+                                            <p class="card__descr">Ремешок для Apple Watch 38mm тканевый на липучке оранжевый</p>
+                                            <div class="price-block">
+                                                <span class="price-block__price">1290 ₽</span>
+                                            </div>
+                                        </a>
+                                        <div class="card__hover-block justify-content-between flex-wrap">
+                                            <button class="card__basket-btn btn-main">В корзину</button>
+                                            <button class="card__order-btn btn-main">Заказ в 1 клик</button>
+                                            <p class="card__delivery"><a href="#" class="card__delivery-link">Условия доставки</a></p>
+                                        </div>
+                                        <svg class="card__loupe-icon card__icon" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="6.54583" cy="6.54583" r="6.04583" stroke="#757575"/>
+                                            <line x1="10.8721" y1="11.3786" x2="17.4844" y2="17.9909" stroke="#757575"/>
+                                            <line x1="4" y1="6.5" x2="9" y2="6.5" stroke="#757575"/>
+                                            <line x1="6.5" y1="9" x2="6.5" y2="4" stroke="#757575"/>
+                                        </svg>
+                                        <svg class="card__like-icon card__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.8373 0C10.1125 0 8.62937 1.09681 8 2.65479C7.3702 1.09681 5.8864 0 4.16078 0C1.86662 0 0 1.93959 0 4.32381C0 5.24389 0.285883 6.1309 0.834005 6.89883L7.74829 15.8744C7.80955 15.9537 7.90198 16 8 16H8.00021C8.09823 16 8.19088 15.9535 8.25192 15.874L15.3158 6.67227C15.3225 6.66333 15.3291 6.65395 15.3352 6.64434C15.77 5.94009 16 5.13754 16 4.32381C16.0002 1.93959 14.1325 0 11.8373 0ZM14.8014 6.26809L7.99957 15.1284L1.34451 6.48973C0.886668 5.84782 0.644634 5.09888 0.644634 4.32381C0.644634 2.30914 2.22194 0.670288 4.16057 0.670288C6.09984 0.670288 7.67757 2.30914 7.67757 4.32381C7.67757 4.50903 7.82181 4.65895 8 4.65895C8.17819 4.65895 8.32242 4.50903 8.32242 4.32381C8.32242 2.30914 9.89908 0.670288 11.8373 0.670288C13.777 0.670288 15.3554 2.30914 15.3554 4.32381C15.3554 5.0037 15.1638 5.67555 14.8014 6.26809Z" fill="#757575"/>
+                                        </svg>   
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-12">
+                            <div class="row align-items-center">
+                                <div class="col-12 col-lg-4 d-flex flex-column mt-2 mt-md-0 align-items-center align-items-lg-start">
+                                    <img src="../../assets/exclusively-img-3.png" alt="" class="exclusively__img">
+                                </div>
+                                <div class="col-8 d-none card-block d-lg-flex justify-content-between">
+                                    <div class="card-block__card card d-flex">
+                                        <a class="card__content d-flex flex-column align-items-center" href="#">
+                                            <span class="card__code">Артикул: 559141</span>
+                                            <img src="../../assets/card-img-3.png" alt="some alt" class="card__img">
+                                            <p class="card__descr">Ремешок для Apple Watch 38mm тканевый на липучке оранжевый</p>
+                                            <div class="price-block">
+                                                <span class="price-block__price price-block__price--discount">890 ₽</span>
+                                                <del class="price-block__old-price">1000 ₽</del>
+                                                <span class="price-block__discount-procent">-11%</span>
+                                            </div>
+                                        </a>
+                                        <div class="card__hover-block justify-content-between flex-wrap">
+                                            <button class="card__basket-btn btn-main">В корзину</button>
+                                            <button class="card__order-btn btn-main">Заказ в 1 клик</button>
+                                            <p class="card__delivery"><a href="#" class="card__delivery-link">Условия доставки</a></p>
+                                        </div>
+                                        <svg class="card__loupe-icon card__icon" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="6.54583" cy="6.54583" r="6.04583" stroke="#757575"/>
+                                            <line x1="10.8721" y1="11.3786" x2="17.4844" y2="17.9909" stroke="#757575"/>
+                                            <line x1="4" y1="6.5" x2="9" y2="6.5" stroke="#757575"/>
+                                            <line x1="6.5" y1="9" x2="6.5" y2="4" stroke="#757575"/>
+                                        </svg>
+                                        <svg class="card__like-icon card__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.8373 0C10.1125 0 8.62937 1.09681 8 2.65479C7.3702 1.09681 5.8864 0 4.16078 0C1.86662 0 0 1.93959 0 4.32381C0 5.24389 0.285883 6.1309 0.834005 6.89883L7.74829 15.8744C7.80955 15.9537 7.90198 16 8 16H8.00021C8.09823 16 8.19088 15.9535 8.25192 15.874L15.3158 6.67227C15.3225 6.66333 15.3291 6.65395 15.3352 6.64434C15.77 5.94009 16 5.13754 16 4.32381C16.0002 1.93959 14.1325 0 11.8373 0ZM14.8014 6.26809L7.99957 15.1284L1.34451 6.48973C0.886668 5.84782 0.644634 5.09888 0.644634 4.32381C0.644634 2.30914 2.22194 0.670288 4.16057 0.670288C6.09984 0.670288 7.67757 2.30914 7.67757 4.32381C7.67757 4.50903 7.82181 4.65895 8 4.65895C8.17819 4.65895 8.32242 4.50903 8.32242 4.32381C8.32242 2.30914 9.89908 0.670288 11.8373 0.670288C13.777 0.670288 15.3554 2.30914 15.3554 4.32381C15.3554 5.0037 15.1638 5.67555 14.8014 6.26809Z" fill="#757575"/>
+                                        </svg>   
+                                    </div>
+                                    <div class="card-block__card card d-flex">
+                                        <a class="card__content d-flex flex-column align-items-center" href="#">
+                                            <span class="card__code">Артикул: 559141</span>
+                                            <img src="../../assets/card-img-4.png" alt="some alt" class="card__img">
+                                            <p class="card__descr">Ремешок для Apple Watch 38mm тканевый на липучке оранжевый</p>
+                                            <div class="price-block">
+                                                <span class="price-block__price">1290 ₽</span>
+                                            </div>
+                                        </a>
+                                        <div class="card__hover-block justify-content-between flex-wrap">
+                                            <button class="card__basket-btn btn-main">В корзину</button>
+                                            <button class="card__order-btn btn-main">Заказ в 1 клик</button>
+                                            <p class="card__delivery"><a href="#" class="card__delivery-link">Условия доставки</a></p>
+                                        </div>
+                                        <svg class="card__loupe-icon card__icon" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="6.54583" cy="6.54583" r="6.04583" stroke="#757575"/>
+                                            <line x1="10.8721" y1="11.3786" x2="17.4844" y2="17.9909" stroke="#757575"/>
+                                            <line x1="4" y1="6.5" x2="9" y2="6.5" stroke="#757575"/>
+                                            <line x1="6.5" y1="9" x2="6.5" y2="4" stroke="#757575"/>
+                                        </svg>
+                                        <svg class="card__like-icon card__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.8373 0C10.1125 0 8.62937 1.09681 8 2.65479C7.3702 1.09681 5.8864 0 4.16078 0C1.86662 0 0 1.93959 0 4.32381C0 5.24389 0.285883 6.1309 0.834005 6.89883L7.74829 15.8744C7.80955 15.9537 7.90198 16 8 16H8.00021C8.09823 16 8.19088 15.9535 8.25192 15.874L15.3158 6.67227C15.3225 6.66333 15.3291 6.65395 15.3352 6.64434C15.77 5.94009 16 5.13754 16 4.32381C16.0002 1.93959 14.1325 0 11.8373 0ZM14.8014 6.26809L7.99957 15.1284L1.34451 6.48973C0.886668 5.84782 0.644634 5.09888 0.644634 4.32381C0.644634 2.30914 2.22194 0.670288 4.16057 0.670288C6.09984 0.670288 7.67757 2.30914 7.67757 4.32381C7.67757 4.50903 7.82181 4.65895 8 4.65895C8.17819 4.65895 8.32242 4.50903 8.32242 4.32381C8.32242 2.30914 9.89908 0.670288 11.8373 0.670288C13.777 0.670288 15.3554 2.30914 15.3554 4.32381C15.3554 5.0037 15.1638 5.67555 14.8014 6.26809Z" fill="#757575"/>
+                                        </svg>   
+                                    </div>
+                                    <div class="card-block__card card d-flex">
+                                        <a class="card__content d-flex flex-column align-items-center" href="#">
+                                            <span class="card__code">Артикул: 559141</span>
+                                            <img src="../../assets/card-img-1.png" alt="some alt" class="card__img">
+                                            <p class="card__descr">Ремешок для Apple Watch 38mm тканевый на липучке оранжевый</p>
+                                            <div class="price-block">
+                                                <span class="price-block__price">1290 ₽</span>
+                                            </div>
+                                        </a>
+                                        <div class="card__hover-block justify-content-between flex-wrap">
+                                            <button class="card__basket-btn btn-main">В корзину</button>
+                                            <button class="card__order-btn btn-main">Заказ в 1 клик</button>
+                                            <p class="card__delivery"><a href="#" class="card__delivery-link">Условия доставки</a></p>
+                                        </div>
+                                        <svg class="card__loupe-icon card__icon" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="6.54583" cy="6.54583" r="6.04583" stroke="#757575"/>
+                                            <line x1="10.8721" y1="11.3786" x2="17.4844" y2="17.9909" stroke="#757575"/>
+                                            <line x1="4" y1="6.5" x2="9" y2="6.5" stroke="#757575"/>
+                                            <line x1="6.5" y1="9" x2="6.5" y2="4" stroke="#757575"/>
+                                        </svg>
+                                        <svg class="card__like-icon card__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.8373 0C10.1125 0 8.62937 1.09681 8 2.65479C7.3702 1.09681 5.8864 0 4.16078 0C1.86662 0 0 1.93959 0 4.32381C0 5.24389 0.285883 6.1309 0.834005 6.89883L7.74829 15.8744C7.80955 15.9537 7.90198 16 8 16H8.00021C8.09823 16 8.19088 15.9535 8.25192 15.874L15.3158 6.67227C15.3225 6.66333 15.3291 6.65395 15.3352 6.64434C15.77 5.94009 16 5.13754 16 4.32381C16.0002 1.93959 14.1325 0 11.8373 0ZM14.8014 6.26809L7.99957 15.1284L1.34451 6.48973C0.886668 5.84782 0.644634 5.09888 0.644634 4.32381C0.644634 2.30914 2.22194 0.670288 4.16057 0.670288C6.09984 0.670288 7.67757 2.30914 7.67757 4.32381C7.67757 4.50903 7.82181 4.65895 8 4.65895C8.17819 4.65895 8.32242 4.50903 8.32242 4.32381C8.32242 2.30914 9.89908 0.670288 11.8373 0.670288C13.777 0.670288 15.3554 2.30914 15.3554 4.32381C15.3554 5.0037 15.1638 5.67555 14.8014 6.26809Z" fill="#757575"/>
+                                        </svg>   
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-12">
+                            <div class="row align-items-center">
+                                <div class="col-12 col-lg-4 d-flex flex-column mt-2 mt-md-0 align-items-center align-items-lg-start">
+                                    <img src="../../assets/exclusively-img-4.png" alt="" class="exclusively__img">
+                                </div>
+                                <div class="col-8 d-none card-block d-lg-flex justify-content-between">
+                                    <div class="card-block__card card d-flex">
+                                        <a class="card__content d-flex flex-column align-items-center" href="#">
+                                            <span class="card__code">Артикул: 559141</span>
+                                            <img src="../../assets/card-img-3.png" alt="some alt" class="card__img">
+                                            <p class="card__descr">Ремешок для Apple Watch 38mm тканевый на липучке оранжевый</p>
+                                            <div class="price-block">
+                                                <span class="price-block__price price-block__price--discount">890 ₽</span>
+                                                <del class="price-block__old-price">1000 ₽</del>
+                                                <span class="price-block__discount-procent">-11%</span>
+                                            </div>
+                                        </a>
+                                        <div class="card__hover-block justify-content-between flex-wrap">
+                                            <button class="card__basket-btn btn-main">В корзину</button>
+                                            <button class="card__order-btn btn-main">Заказ в 1 клик</button>
+                                            <p class="card__delivery"><a href="#" class="card__delivery-link">Условия доставки</a></p>
+                                        </div>
+                                        <svg class="card__loupe-icon card__icon" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="6.54583" cy="6.54583" r="6.04583" stroke="#757575"/>
+                                            <line x1="10.8721" y1="11.3786" x2="17.4844" y2="17.9909" stroke="#757575"/>
+                                            <line x1="4" y1="6.5" x2="9" y2="6.5" stroke="#757575"/>
+                                            <line x1="6.5" y1="9" x2="6.5" y2="4" stroke="#757575"/>
+                                        </svg>
+                                        <svg class="card__like-icon card__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.8373 0C10.1125 0 8.62937 1.09681 8 2.65479C7.3702 1.09681 5.8864 0 4.16078 0C1.86662 0 0 1.93959 0 4.32381C0 5.24389 0.285883 6.1309 0.834005 6.89883L7.74829 15.8744C7.80955 15.9537 7.90198 16 8 16H8.00021C8.09823 16 8.19088 15.9535 8.25192 15.874L15.3158 6.67227C15.3225 6.66333 15.3291 6.65395 15.3352 6.64434C15.77 5.94009 16 5.13754 16 4.32381C16.0002 1.93959 14.1325 0 11.8373 0ZM14.8014 6.26809L7.99957 15.1284L1.34451 6.48973C0.886668 5.84782 0.644634 5.09888 0.644634 4.32381C0.644634 2.30914 2.22194 0.670288 4.16057 0.670288C6.09984 0.670288 7.67757 2.30914 7.67757 4.32381C7.67757 4.50903 7.82181 4.65895 8 4.65895C8.17819 4.65895 8.32242 4.50903 8.32242 4.32381C8.32242 2.30914 9.89908 0.670288 11.8373 0.670288C13.777 0.670288 15.3554 2.30914 15.3554 4.32381C15.3554 5.0037 15.1638 5.67555 14.8014 6.26809Z" fill="#757575"/>
+                                        </svg>   
+                                    </div>
+                                    <div class="card-block__card card d-flex">
+                                        <a class="card__content d-flex flex-column align-items-center" href="#">
+                                            <span class="card__code">Артикул: 559141</span>
+                                            <img src="../../assets/card-img-4.png" alt="some alt" class="card__img">
+                                            <p class="card__descr">Ремешок для Apple Watch 38mm тканевый на липучке оранжевый</p>
+                                            <div class="price-block">
+                                                <span class="price-block__price">1290 ₽</span>
+                                            </div>
+                                        </a>
+                                        <div class="card__hover-block justify-content-between flex-wrap">
+                                            <button class="card__basket-btn btn-main">В корзину</button>
+                                            <button class="card__order-btn btn-main">Заказ в 1 клик</button>
+                                            <p class="card__delivery"><a href="#" class="card__delivery-link">Условия доставки</a></p>
+                                        </div>
+                                        <svg class="card__loupe-icon card__icon" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="6.54583" cy="6.54583" r="6.04583" stroke="#757575"/>
+                                            <line x1="10.8721" y1="11.3786" x2="17.4844" y2="17.9909" stroke="#757575"/>
+                                            <line x1="4" y1="6.5" x2="9" y2="6.5" stroke="#757575"/>
+                                            <line x1="6.5" y1="9" x2="6.5" y2="4" stroke="#757575"/>
+                                        </svg>
+                                        <svg class="card__like-icon card__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.8373 0C10.1125 0 8.62937 1.09681 8 2.65479C7.3702 1.09681 5.8864 0 4.16078 0C1.86662 0 0 1.93959 0 4.32381C0 5.24389 0.285883 6.1309 0.834005 6.89883L7.74829 15.8744C7.80955 15.9537 7.90198 16 8 16H8.00021C8.09823 16 8.19088 15.9535 8.25192 15.874L15.3158 6.67227C15.3225 6.66333 15.3291 6.65395 15.3352 6.64434C15.77 5.94009 16 5.13754 16 4.32381C16.0002 1.93959 14.1325 0 11.8373 0ZM14.8014 6.26809L7.99957 15.1284L1.34451 6.48973C0.886668 5.84782 0.644634 5.09888 0.644634 4.32381C0.644634 2.30914 2.22194 0.670288 4.16057 0.670288C6.09984 0.670288 7.67757 2.30914 7.67757 4.32381C7.67757 4.50903 7.82181 4.65895 8 4.65895C8.17819 4.65895 8.32242 4.50903 8.32242 4.32381C8.32242 2.30914 9.89908 0.670288 11.8373 0.670288C13.777 0.670288 15.3554 2.30914 15.3554 4.32381C15.3554 5.0037 15.1638 5.67555 14.8014 6.26809Z" fill="#757575"/>
+                                        </svg>   
+                                    </div>
+                                    <div class="card-block__card card d-flex">
+                                        <a class="card__content d-flex flex-column align-items-center" href="#">
+                                            <span class="card__code">Артикул: 559141</span>
+                                            <img src="../../assets/card-img-1.png" alt="some alt" class="card__img">
+                                            <p class="card__descr">Ремешок для Apple Watch 38mm тканевый на липучке оранжевый</p>
+                                            <div class="price-block">
+                                                <span class="price-block__price">1290 ₽</span>
+                                            </div>
+                                        </a>
+                                        <div class="card__hover-block justify-content-between flex-wrap">
+                                            <button class="card__basket-btn btn-main">В корзину</button>
+                                            <button class="card__order-btn btn-main">Заказ в 1 клик</button>
+                                            <p class="card__delivery"><a href="#" class="card__delivery-link">Условия доставки</a></p>
+                                        </div>
+                                        <svg class="card__loupe-icon card__icon" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="6.54583" cy="6.54583" r="6.04583" stroke="#757575"/>
+                                            <line x1="10.8721" y1="11.3786" x2="17.4844" y2="17.9909" stroke="#757575"/>
+                                            <line x1="4" y1="6.5" x2="9" y2="6.5" stroke="#757575"/>
+                                            <line x1="6.5" y1="9" x2="6.5" y2="4" stroke="#757575"/>
+                                        </svg>
+                                        <svg class="card__like-icon card__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.8373 0C10.1125 0 8.62937 1.09681 8 2.65479C7.3702 1.09681 5.8864 0 4.16078 0C1.86662 0 0 1.93959 0 4.32381C0 5.24389 0.285883 6.1309 0.834005 6.89883L7.74829 15.8744C7.80955 15.9537 7.90198 16 8 16H8.00021C8.09823 16 8.19088 15.9535 8.25192 15.874L15.3158 6.67227C15.3225 6.66333 15.3291 6.65395 15.3352 6.64434C15.77 5.94009 16 5.13754 16 4.32381C16.0002 1.93959 14.1325 0 11.8373 0ZM14.8014 6.26809L7.99957 15.1284L1.34451 6.48973C0.886668 5.84782 0.644634 5.09888 0.644634 4.32381C0.644634 2.30914 2.22194 0.670288 4.16057 0.670288C6.09984 0.670288 7.67757 2.30914 7.67757 4.32381C7.67757 4.50903 7.82181 4.65895 8 4.65895C8.17819 4.65895 8.32242 4.50903 8.32242 4.32381C8.32242 2.30914 9.89908 0.670288 11.8373 0.670288C13.777 0.670288 15.3554 2.30914 15.3554 4.32381C15.3554 5.0037 15.1638 5.67555 14.8014 6.26809Z" fill="#757575"/>
+                                        </svg>   
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="discounts container-lg">
+            <div class="row">
+                <div class="col-12"><h2 class="title discounts__title">Понижение цены</h2></div>
+            </div>
+            <div class="row">
+                <div class="col-12 card-block d-flex justify-content-between">
+                    <div class="card-block__card card d-flex">
+                        <a class="card__content d-flex flex-column align-items-center" href="#">
+                            <span class="card__code">Артикул: 559141</span>
+                            <img src="../../assets/card-img-1.png" alt="some alt" class="card__img">
+                            <p class="card__descr">Ремешок для Apple Watch 38mm тканевый на липучке оранжевый</p>
+                            <div class="price-block">
+                                <span class="price-block__price">1290 ₽</span>
+                            </div>
+                        </a>
+                        <div class="card__hover-block justify-content-between flex-wrap">
+                            <button class="card__basket-btn btn-main">В корзину</button>
+                            <button class="card__order-btn btn-main">Заказ в 1 клик</button>
+                            <p class="card__delivery"><a href="#" class="card__delivery-link">Условия доставки</a></p>
+                        </div>
+                        <svg class="card__loupe-icon card__icon" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="6.54583" cy="6.54583" r="6.04583" stroke="#757575"/>
+                            <line x1="10.8721" y1="11.3786" x2="17.4844" y2="17.9909" stroke="#757575"/>
+                            <line x1="4" y1="6.5" x2="9" y2="6.5" stroke="#757575"/>
+                            <line x1="6.5" y1="9" x2="6.5" y2="4" stroke="#757575"/>
+                        </svg>
+                        <svg class="card__like-icon card__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.8373 0C10.1125 0 8.62937 1.09681 8 2.65479C7.3702 1.09681 5.8864 0 4.16078 0C1.86662 0 0 1.93959 0 4.32381C0 5.24389 0.285883 6.1309 0.834005 6.89883L7.74829 15.8744C7.80955 15.9537 7.90198 16 8 16H8.00021C8.09823 16 8.19088 15.9535 8.25192 15.874L15.3158 6.67227C15.3225 6.66333 15.3291 6.65395 15.3352 6.64434C15.77 5.94009 16 5.13754 16 4.32381C16.0002 1.93959 14.1325 0 11.8373 0ZM14.8014 6.26809L7.99957 15.1284L1.34451 6.48973C0.886668 5.84782 0.644634 5.09888 0.644634 4.32381C0.644634 2.30914 2.22194 0.670288 4.16057 0.670288C6.09984 0.670288 7.67757 2.30914 7.67757 4.32381C7.67757 4.50903 7.82181 4.65895 8 4.65895C8.17819 4.65895 8.32242 4.50903 8.32242 4.32381C8.32242 2.30914 9.89908 0.670288 11.8373 0.670288C13.777 0.670288 15.3554 2.30914 15.3554 4.32381C15.3554 5.0037 15.1638 5.67555 14.8014 6.26809Z" fill="#757575"/>
+                        </svg>   
+                    </div>
+                    <div class="card-block__card card d-flex">
+                        <a class="card__content d-flex flex-column align-items-center" href="#">
+                            <span class="card__code">Артикул: 559141</span>
+                            <img src="../../assets/card-img-2.png" alt="some alt" class="card__img">
+                            <p class="card__descr">Ремешок для Apple Watch 38mm тканевый на липучке оранжевый</p>
+                            <div class="price-block">
+                                <span class="price-block__price">1290 ₽</span>
+                            </div>
+                        </a>
+                        <div class="card__hover-block justify-content-between flex-wrap">
+                            <button class="card__basket-btn btn-main">В корзину</button>
+                            <button class="card__order-btn btn-main">Заказ в 1 клик</button>
+                            <p class="card__delivery"><a href="#" class="card__delivery-link">Условия доставки</a></p>
+                        </div>
+                        <svg class="card__loupe-icon card__icon" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="6.54583" cy="6.54583" r="6.04583" stroke="#757575"/>
+                            <line x1="10.8721" y1="11.3786" x2="17.4844" y2="17.9909" stroke="#757575"/>
+                            <line x1="4" y1="6.5" x2="9" y2="6.5" stroke="#757575"/>
+                            <line x1="6.5" y1="9" x2="6.5" y2="4" stroke="#757575"/>
+                        </svg>
+                        <svg class="card__like-icon card__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.8373 0C10.1125 0 8.62937 1.09681 8 2.65479C7.3702 1.09681 5.8864 0 4.16078 0C1.86662 0 0 1.93959 0 4.32381C0 5.24389 0.285883 6.1309 0.834005 6.89883L7.74829 15.8744C7.80955 15.9537 7.90198 16 8 16H8.00021C8.09823 16 8.19088 15.9535 8.25192 15.874L15.3158 6.67227C15.3225 6.66333 15.3291 6.65395 15.3352 6.64434C15.77 5.94009 16 5.13754 16 4.32381C16.0002 1.93959 14.1325 0 11.8373 0ZM14.8014 6.26809L7.99957 15.1284L1.34451 6.48973C0.886668 5.84782 0.644634 5.09888 0.644634 4.32381C0.644634 2.30914 2.22194 0.670288 4.16057 0.670288C6.09984 0.670288 7.67757 2.30914 7.67757 4.32381C7.67757 4.50903 7.82181 4.65895 8 4.65895C8.17819 4.65895 8.32242 4.50903 8.32242 4.32381C8.32242 2.30914 9.89908 0.670288 11.8373 0.670288C13.777 0.670288 15.3554 2.30914 15.3554 4.32381C15.3554 5.0037 15.1638 5.67555 14.8014 6.26809Z" fill="#757575"/>
+                        </svg>   
+                    </div>
+                    <div class="card-block__card card d-flex">
+                        <a class="card__content d-flex flex-column align-items-center" href="#">
+                            <span class="card__code">Артикул: 559141</span>
+                            <img src="../../assets/card-img-3.png" alt="some alt" class="card__img">
+                            <p class="card__descr">Ремешок для Apple Watch 38mm тканевый на липучке оранжевый</p>
+                            <div class="price-block">
+                                <span class="price-block__price price-block__price--discount">890 ₽</span>
+                                <del class="price-block__old-price">1000 ₽</del>
+                                <span class="price-block__discount-procent">-11%</span>
+                            </div>
+                        </a>
+                        <div class="card__hover-block justify-content-between flex-wrap">
+                            <button class="card__basket-btn btn-main">В корзину</button>
+                            <button class="card__order-btn btn-main">Заказ в 1 клик</button>
+                            <p class="card__delivery"><a href="#" class="card__delivery-link">Условия доставки</a></p>
+                        </div>
+                        <svg class="card__loupe-icon card__icon" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="6.54583" cy="6.54583" r="6.04583" stroke="#757575"/>
+                            <line x1="10.8721" y1="11.3786" x2="17.4844" y2="17.9909" stroke="#757575"/>
+                            <line x1="4" y1="6.5" x2="9" y2="6.5" stroke="#757575"/>
+                            <line x1="6.5" y1="9" x2="6.5" y2="4" stroke="#757575"/>
+                        </svg>
+                        <svg class="card__like-icon card__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.8373 0C10.1125 0 8.62937 1.09681 8 2.65479C7.3702 1.09681 5.8864 0 4.16078 0C1.86662 0 0 1.93959 0 4.32381C0 5.24389 0.285883 6.1309 0.834005 6.89883L7.74829 15.8744C7.80955 15.9537 7.90198 16 8 16H8.00021C8.09823 16 8.19088 15.9535 8.25192 15.874L15.3158 6.67227C15.3225 6.66333 15.3291 6.65395 15.3352 6.64434C15.77 5.94009 16 5.13754 16 4.32381C16.0002 1.93959 14.1325 0 11.8373 0ZM14.8014 6.26809L7.99957 15.1284L1.34451 6.48973C0.886668 5.84782 0.644634 5.09888 0.644634 4.32381C0.644634 2.30914 2.22194 0.670288 4.16057 0.670288C6.09984 0.670288 7.67757 2.30914 7.67757 4.32381C7.67757 4.50903 7.82181 4.65895 8 4.65895C8.17819 4.65895 8.32242 4.50903 8.32242 4.32381C8.32242 2.30914 9.89908 0.670288 11.8373 0.670288C13.777 0.670288 15.3554 2.30914 15.3554 4.32381C15.3554 5.0037 15.1638 5.67555 14.8014 6.26809Z" fill="#757575"/>
+                        </svg>   
+                    </div>
+                    <div class="card-block__card card d-flex">
+                        <a class="card__content d-flex flex-column align-items-center" href="#">
+                            <span class="card__code">Артикул: 559141</span>
+                            <img src="../../assets/card-img-4.png" alt="some alt" class="card__img">
+                            <p class="card__descr">Ремешок для Apple Watch 38mm тканевый на липучке оранжевый</p>
+                            <div class="price-block">
+                                <span class="price-block__price">1290 ₽</span>
+                            </div>
+                        </a>
+                        <div class="card__hover-block justify-content-between flex-wrap">
+                            <button class="card__basket-btn btn-main">В корзину</button>
+                            <button class="card__order-btn btn-main">Заказ в 1 клик</button>
+                            <p class="card__delivery"><a href="#" class="card__delivery-link">Условия доставки</a></p>
+                        </div>
+                        <svg class="card__loupe-icon card__icon" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="6.54583" cy="6.54583" r="6.04583" stroke="#757575"/>
+                            <line x1="10.8721" y1="11.3786" x2="17.4844" y2="17.9909" stroke="#757575"/>
+                            <line x1="4" y1="6.5" x2="9" y2="6.5" stroke="#757575"/>
+                            <line x1="6.5" y1="9" x2="6.5" y2="4" stroke="#757575"/>
+                        </svg>
+                        <svg class="card__like-icon card__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.8373 0C10.1125 0 8.62937 1.09681 8 2.65479C7.3702 1.09681 5.8864 0 4.16078 0C1.86662 0 0 1.93959 0 4.32381C0 5.24389 0.285883 6.1309 0.834005 6.89883L7.74829 15.8744C7.80955 15.9537 7.90198 16 8 16H8.00021C8.09823 16 8.19088 15.9535 8.25192 15.874L15.3158 6.67227C15.3225 6.66333 15.3291 6.65395 15.3352 6.64434C15.77 5.94009 16 5.13754 16 4.32381C16.0002 1.93959 14.1325 0 11.8373 0ZM14.8014 6.26809L7.99957 15.1284L1.34451 6.48973C0.886668 5.84782 0.644634 5.09888 0.644634 4.32381C0.644634 2.30914 2.22194 0.670288 4.16057 0.670288C6.09984 0.670288 7.67757 2.30914 7.67757 4.32381C7.67757 4.50903 7.82181 4.65895 8 4.65895C8.17819 4.65895 8.32242 4.50903 8.32242 4.32381C8.32242 2.30914 9.89908 0.670288 11.8373 0.670288C13.777 0.670288 15.3554 2.30914 15.3554 4.32381C15.3554 5.0037 15.1638 5.67555 14.8014 6.26809Z" fill="#757575"/>
+                        </svg>   
+                    </div>
+                    <div class="card-block__card card d-flex">
+                        <a class="card__content d-flex flex-column align-items-center" href="#">
+                            <span class="card__code">Артикул: 559141</span>
+                            <img src="../../assets/card-img-1.png" alt="some alt" class="card__img">
+                            <p class="card__descr">Ремешок для Apple Watch 38mm тканевый на липучке оранжевый</p>
+                            <div class="price-block">
+                                <span class="price-block__price">1290 ₽</span>
+                            </div>
+                        </a>
+                        <div class="card__hover-block justify-content-between flex-wrap">
+                            <button class="card__basket-btn btn-main">В корзину</button>
+                            <button class="card__order-btn btn-main">Заказ в 1 клик</button>
+                            <p class="card__delivery"><a href="#" class="card__delivery-link">Условия доставки</a></p>
+                        </div>
+                        <svg class="card__loupe-icon card__icon" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="6.54583" cy="6.54583" r="6.04583" stroke="#757575"/>
+                            <line x1="10.8721" y1="11.3786" x2="17.4844" y2="17.9909" stroke="#757575"/>
+                            <line x1="4" y1="6.5" x2="9" y2="6.5" stroke="#757575"/>
+                            <line x1="6.5" y1="9" x2="6.5" y2="4" stroke="#757575"/>
+                        </svg>
+                        <svg class="card__like-icon card__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.8373 0C10.1125 0 8.62937 1.09681 8 2.65479C7.3702 1.09681 5.8864 0 4.16078 0C1.86662 0 0 1.93959 0 4.32381C0 5.24389 0.285883 6.1309 0.834005 6.89883L7.74829 15.8744C7.80955 15.9537 7.90198 16 8 16H8.00021C8.09823 16 8.19088 15.9535 8.25192 15.874L15.3158 6.67227C15.3225 6.66333 15.3291 6.65395 15.3352 6.64434C15.77 5.94009 16 5.13754 16 4.32381C16.0002 1.93959 14.1325 0 11.8373 0ZM14.8014 6.26809L7.99957 15.1284L1.34451 6.48973C0.886668 5.84782 0.644634 5.09888 0.644634 4.32381C0.644634 2.30914 2.22194 0.670288 4.16057 0.670288C6.09984 0.670288 7.67757 2.30914 7.67757 4.32381C7.67757 4.50903 7.82181 4.65895 8 4.65895C8.17819 4.65895 8.32242 4.50903 8.32242 4.32381C8.32242 2.30914 9.89908 0.670288 11.8373 0.670288C13.777 0.670288 15.3554 2.30914 15.3554 4.32381C15.3554 5.0037 15.1638 5.67555 14.8014 6.26809Z" fill="#757575"/>
+                        </svg>   
+                    </div>                
+                </div>
+            </div>
+        </section>
+        <section class="instagram container-lg">
+            <div class="row">
+                <div class="col-12">
+                    <a href="#" class="instagram__link">
+                        <h2 class="title instagram__title">@KUPI_CHEHOL.RU</h2>
+                        <p class="instagram__sub-title">Подписывайся на наш аккаунт в Instagram</p>
+                    </a>
+                </div>
+                <div class="col-12 instagram__img-block">
+                    <div class="row">
+                        <div class="col-6 col-md-3">
+                            <img class="instagram__img" src="../../assets/insta-img-1.jpg" alt="some alt">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <img class="instagram__img" src="../../assets/insta-img-2.jpg" alt="some alt">
+                        </div>
+                        <div class="col-3 d-none d-md-flex">
+                            <img class="instagram__img" src="../../assets/insta-img-3.jpg" alt="some alt">
+                        </div>
+                        <div class="col-3 d-none d-md-flex">
+                            <img class="instagram__img" src="../../assets/insta-img-4.jpg" alt="some alt">
+                        </div>
+                        <div class="col-6 col-md-3 mt-2 mt-md-3">
+                            <img class="instagram__img" src="../../assets/insta-img-5.jpg" alt="some alt">
+                        </div>
+                        <div class="col-6 col-md-3 mt-2 mt-md-3">
+                            <img class="instagram__img" src="../../assets/insta-img-6.jpg" alt="some alt">
+                        </div>
+                        <div class="col-3 d-none d-md-flex mt-md-3">
+                            <img class="instagram__img" src="../../assets/insta-img-7.jpg" alt="some alt">
+                        </div>
+                        <div class="col-3 d-none d-md-flex mt-md-3">
+                            <img class="instagram__img" src="../../assets/insta-img-8.jpg" alt="some alt">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="our-magazine container-lg">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="title our-magazine__title">Наши магазины</h2>
+                </div>
+                <div class="col-12 collapse-wrapper">
+                    <button class="collapse-wrapper__btn" type="button" data-bs-toggle="collapse" data-bs-target="#map-1" aria-expanded="false" aria-controls="map-1">
+                        <span class="collapse-wrapper__txt">г. Фрязино (2 салона)</span>
+                        <svg class="collapse-wrapper__svg" width="15" height="26" viewBox="0 0 15 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="1.13142" y1="0.868577" x2="14.2825" y2="14.0196" stroke="#0D2A73" stroke-width="2"/>
+                            <line x1="1.9091" y1="24.8686" x2="12.7582" y2="14.0195" stroke="#0D2A73" stroke-width="2"/>
+                        </svg>    
+                    </button>
+                    <div class="collapse multi-collapse collapse-wrapper__block" id="map-1">
+                        <div class="map">
+                            <div class="d-flex justify-content-between">
+                                <div class="map__txt-content">
+                                    <h3 class="map__title">Салон №1</h3>
+                                    <p class="map__address">Московская обл., г. Фрязино, Проспект Мира 18к4.</p>
+                                    <p class="map__time">Часы работы: Пн-Вс с 09-00 до 21-00</p>
+                                    <p class="map__tel">Тел.: 8 (495) 133-18-41 доб.303</p>
+                                </div>
+                                <div class="map__img-content img-content">
+                                    <a href="#"><img class="map__img" src="../../assets/map-img.jpg" alt="some alt"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="map">
+                            <div class="d-flex justify-content-between">
+                                <div class="map__txt-content">
+                                    <h3 class="map__title">Салон №2</h3>
+                                    <p class="map__address">Московская обл., г. Фрязино, ул. 60 лет СССР, <br />
+                                        д. 10, ТК «ВИКО», 1 этаж.</p>
+                                    <p class="map__time">Часы работы: Пн-Вс с 09-00 до 21-00</p>
+                                    <p class="map__tel">Тел.: 8 (495) 133-18-41 доб.304</p>
+                                </div>
+                                <div class="map__img-content img-content">
+                                    <a href="#"><img class="map__img" src="../../assets/map-img.jpg" alt="some alt"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+                <div class="col-12 collapse-wrapper">
+                    <button class="collapse-wrapper__btn" type="button" data-bs-toggle="collapse" data-bs-target="#map-2" aria-expanded="false" aria-controls="map-2">
+                        <span class="collapse-wrapper__txt">г. Ивантеевка (1 салон)</span>
+                        <svg class="collapse-wrapper__svg" width="15" height="26" viewBox="0 0 15 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="1.13142" y1="0.868577" x2="14.2825" y2="14.0196" stroke="#0D2A73" stroke-width="2"/>
+                            <line x1="1.9091" y1="24.8686" x2="12.7582" y2="14.0195" stroke="#0D2A73" stroke-width="2"/>
+                        </svg>    
+                    </button>
+                    <div class="collapse multi-collapse collapse-wrapper__block" id="map-2">
+                        <div class="map">
+                            <div class="d-flex justify-content-between">
+                                <div class="map__txt-content">
+                                    <h3 class="map__title">Салон №1</h3>
+                                    <p class="map__address">Московская обл., г. Фрязино, Проспект Мира 18к4.</p>
+                                    <p class="map__time">Часы работы: Пн-Вс с 09-00 до 21-00</p>
+                                    <p class="map__tel">Тел.: 8 (495) 133-18-41 доб.303</p>
+                                </div>
+                                <div class="map__img-content img-content">
+                                    <a href="#"><img class="map__img" src="../../assets/map-img.jpg" alt="some alt"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+                <div class="col-12 collapse-wrapper">
+                    <button class="collapse-wrapper__btn" type="button" data-bs-toggle="collapse" data-bs-target="#map-3" aria-expanded="false" aria-controls="map-3">
+                        <span class="collapse-wrapper__txt">г. Сергиев Посад (3 салона)</span>
+                        <svg class="collapse-wrapper__svg" width="15" height="26" viewBox="0 0 15 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="1.13142" y1="0.868577" x2="14.2825" y2="14.0196" stroke="#0D2A73" stroke-width="2"/>
+                            <line x1="1.9091" y1="24.8686" x2="12.7582" y2="14.0195" stroke="#0D2A73" stroke-width="2"/>
+                        </svg>    
+                    </button>
+                    <div class="collapse multi-collapse collapse-wrapper__block" id="map-3">
+                        <div class="map">
+                            <div class="d-flex justify-content-between">
+                                <div class="map__txt-content">
+                                    <h3 class="map__title">Салон №1</h3>
+                                    <p class="map__address">Московская обл., г. Фрязино, Проспект Мира 18к4.</p>
+                                    <p class="map__time">Часы работы: Пн-Вс с 09-00 до 21-00</p>
+                                    <p class="map__tel">Тел.: 8 (495) 133-18-41 доб.303</p>
+                                </div>
+                                <div class="map__img-content img-content">
+                                    <a href="#"><img class="map__img" src="../../assets/map-img.jpg" alt="some alt"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+                <div class="col-12 collapse-wrapper">
+                    <button class="collapse-wrapper__btn" type="button" data-bs-toggle="collapse" data-bs-target="#map-4" aria-expanded="false" aria-controls="map-4">
+                        <span class="collapse-wrapper__txt">г. Ногинск (1 салон)</span>
+                        <svg class="collapse-wrapper__svg" width="15" height="26" viewBox="0 0 15 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="1.13142" y1="0.868577" x2="14.2825" y2="14.0196" stroke="#0D2A73" stroke-width="2"/>
+                            <line x1="1.9091" y1="24.8686" x2="12.7582" y2="14.0195" stroke="#0D2A73" stroke-width="2"/>
+                        </svg>    
+                    </button>
+                    <div class="collapse multi-collapse collapse-wrapper__block" id="map-4">
+                        <div class="map">
+                            <div class="d-flex justify-content-between">
+                                <div class="map__txt-content">
+                                    <h3 class="map__title">Салон №1</h3>
+                                    <p class="map__address">Московская обл., г. Фрязино, Проспект Мира 18к4.</p>
+                                    <p class="map__time">Часы работы: Пн-Вс с 09-00 до 21-00</p>
+                                    <p class="map__tel">Тел.: 8 (495) 133-18-41 доб.303</p>
+                                </div>
+                                <div class="map__img-content img-content">
+                                    <a href="#"><img class="map__img" src="../../assets/map-img.jpg" alt="some alt"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+                <div class="col-12 collapse-wrapper">
+                    <button class="collapse-wrapper__btn" type="button" data-bs-toggle="collapse" data-bs-target="#map-5" aria-expanded="false" aria-controls="map-5">
+                        <span class="collapse-wrapper__txt">г. Пушкино (2 салона)</span>
+                        <svg class="collapse-wrapper__svg" width="15" height="26" viewBox="0 0 15 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="1.13142" y1="0.868577" x2="14.2825" y2="14.0196" stroke="#0D2A73" stroke-width="2"/>
+                            <line x1="1.9091" y1="24.8686" x2="12.7582" y2="14.0195" stroke="#0D2A73" stroke-width="2"/>
+                        </svg>    
+                    </button>
+                    <div class="collapse multi-collapse collapse-wrapper__block" id="map-5">
+                        <div class="map">
+                            <div class="d-flex justify-content-between">
+                                <div class="map__txt-content">
+                                    <h3 class="map__title">Салон №1</h3>
+                                    <p class="map__address">Московская обл., г. Фрязино, Проспект Мира 18к4.</p>
+                                    <p class="map__time">Часы работы: Пн-Вс с 09-00 до 21-00</p>
+                                    <p class="map__tel">Тел.: 8 (495) 133-18-41 доб.303</p>
+                                </div>
+                                <div class="map__img-content img-content">
+                                    <a href="#"><img class="map__img" src="../../assets/map-img.jpg" alt="some alt"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+                <div class="col-12 collapse-wrapper">
+                    <button class="collapse-wrapper__btn" type="button" data-bs-toggle="collapse" data-bs-target="#map-6" aria-expanded="false" aria-controls="map-6">
+                        <span class="collapse-wrapper__txt">г. Электросталь (2 салона)</span>
+                        <svg class="collapse-wrapper__svg" width="15" height="26" viewBox="0 0 15 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="1.13142" y1="0.868577" x2="14.2825" y2="14.0196" stroke="#0D2A73" stroke-width="2"/>
+                            <line x1="1.9091" y1="24.8686" x2="12.7582" y2="14.0195" stroke="#0D2A73" stroke-width="2"/>
+                        </svg>    
+                    </button>
+                    <div class="collapse multi-collapse collapse-wrapper__block" id="map-6">
+                        <div class="map">
+                            <div class="d-flex justify-content-between">
+                                <div class="map__txt-content">
+                                    <h3 class="map__title">Салон №1</h3>
+                                    <p class="map__address">Московская обл., г. Фрязино, Проспект Мира 18к4.</p>
+                                    <p class="map__time">Часы работы: Пн-Вс с 09-00 до 21-00</p>
+                                    <p class="map__tel">Тел.: 8 (495) 133-18-41 доб.303</p>
+                                </div>
+                                <div class="map__img-content img-content">
+                                    <a href="#"><img class="map__img" src="../../assets/map-img.jpg" alt="some alt"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+                <div class="col-12 collapse-wrapper">
+                    <button class="collapse-wrapper__btn" type="button" data-bs-toggle="collapse" data-bs-target="#map-7" aria-expanded="false" aria-controls="map-7">
+                        <span class="collapse-wrapper__txt">г. Королев (1 салон)</span>
+                        <svg class="collapse-wrapper__svg" width="15" height="26" viewBox="0 0 15 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="1.13142" y1="0.868577" x2="14.2825" y2="14.0196" stroke="#0D2A73" stroke-width="2"/>
+                            <line x1="1.9091" y1="24.8686" x2="12.7582" y2="14.0195" stroke="#0D2A73" stroke-width="2"/>
+                        </svg>    
+                    </button>
+                    <div class="collapse multi-collapse collapse-wrapper__block" id="map-7">
+                        <div class="map">
+                            <div class="d-flex justify-content-between">
+                                <div class="map__txt-content">
+                                    <h3 class="map__title">Салон №1</h3>
+                                    <p class="map__address">Московская обл., г. Фрязино, Проспект Мира 18к4.</p>
+                                    <p class="map__time">Часы работы: Пн-Вс с 09-00 до 21-00</p>
+                                    <p class="map__tel">Тел.: 8 (495) 133-18-41 доб.303</p>
+                                </div>
+                                <div class="map__img-content img-content">
+                                    <a href="#"><img class="map__img" src="../../assets/map-img.jpg" alt="some alt"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                
+                </div>           
+            </div>
+        </section>
+    </main>
+    <mainFooter></mainFooter>
+</body>
+</html>

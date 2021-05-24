@@ -1,0 +1,436 @@
+.opacity {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0 auto;
+    height: 2000px;
+    z-index: 999;
+    display: none;
+}
+
+.opacity-visible {
+    display: block;
+}
+
+.header {
+    padding: 19px 0 43px 0;
+    background: linear-gradient(90deg, #131E3A 0%, #0D2A73 100%);
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1000;
+    color: $white;
+    font-size: 14px;
+}
+
+.header-nav {
+    &__list-item:not(:last-child) {
+        margin-right: 26px;
+    }
+
+    &__list-link:hover {
+        border-bottom: 1px solid $white;
+    }
+}
+
+.call {
+    &__link {
+        font-size: 16px;
+    }
+
+    &__btn {
+        padding: 8px 15px 9px 15px;
+        margin-left: 28px;
+    }
+}
+
+.header-ui {
+    margin-top: 32px;
+
+    &__search {
+        max-width: 350px;
+        width: 100%;
+        background: url('../../assets/search-icon.svg') no-repeat center right 18px #415486;
+        color: #7488BC;
+        padding: 17px 18px;      
+        border-radius: 24px;
+    }
+
+    &__search::placeholder {
+        color: #7488BC;
+    }
+
+    &__list-item {
+        display: flex;
+    }
+
+    &__list-link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__list-link:hover svg {
+        transform: translateY(-2px);
+    }
+
+    &__list-link:hover svg path {
+        fill: $red;
+    }
+
+    &__list-link:hover {
+        color: $red;
+    }
+
+    &__list-item:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    &__list-svg {
+        margin-bottom: auto;
+    }
+
+    &__list-txt {
+        font-size: 12px;
+        margin-top: 9px;
+    }
+}
+
+.logo {
+    position: relative;
+
+    &__title-txt {
+        position: absolute;
+        opacity: 0;
+    }
+
+    &__svg {
+        overflow: visible;
+        margin-left: -3px;
+    }
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    margin-right: 54px;
+    cursor: pointer;
+    position: relative;
+    & span {
+        display: inline-block;
+        width: 40px;
+        height: 3.5px;
+        background: $white;
+        transition: all .5s ease;
+    }
+
+    & span:not(:last-child) {
+        margin-bottom: 9px;
+    }
+}
+.menu[data-toggle="true"]::after {
+    content: '';
+    border: 20px solid transparent;
+    border-bottom: 24px solid white;
+    position: absolute;
+    bottom: -45px;
+    width: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menu[data-toggle="true"] {
+    & span:nth-child(1) {
+        position: absolute;
+        transform: rotate(135deg);
+    }
+
+    & span:nth-child(2) {
+        position: absolute;
+        transform: rotate(45deg);
+    }
+
+    & span:nth-child(3) {
+        opacity: 0;
+    }
+}
+
+
+
+.hamburger {
+    width: 100%;
+    max-width: 485px;
+    padding: 30px 65px 17px 15px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 110%;
+    left: -30px;
+    z-index: 100;
+    background: $white;
+    color: $black;
+    font-size: 16px;
+    border-radius: 3px;
+    ::-webkit-scrollbar {
+        width: 11px;
+        background-color: #E9E9E9;
+        border-radius: 5px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: #BEBEBE;
+        border-radius: 5px;
+    }
+    &-container {     
+        display: flex;
+        max-height: 557px;
+    }
+}
+.category-list {
+    display: flex;
+    flex-direction: column;
+    &__item {
+        padding: 3px 0 3px 40px;
+        background-repeat: no-repeat;
+        background-position: left center;
+    }
+    &__item:not(:first-child) {
+        margin-top: 18px;
+    }
+    &__item-txt {
+        padding-right: 15px;
+        background: url('../../assets/hamburger-arrow-icon.svg') no-repeat right center;
+    }
+    & .covers {
+        background-image: url('../../assets/hamburger-icon-1.svg');
+    }
+    & .defense {
+        background-image: url('../../assets/hamburger-icon-2.svg');
+    }
+    & .batteries {
+        background-image: url('../../assets/hamburger-icon-3.svg');
+    }
+    & .accessories {
+        background-image: url('../../assets/hamburger-icon-4.svg');
+    }
+    & .ajax {
+        background-image: url('../../assets/hamburger-icon-5.svg');
+    }
+    & .car {
+        background-image: url('../../assets/hamburger-icon-6.svg');
+    }
+    & .sport {
+        background-image: url('../../assets/hamburger-icon-7.svg');
+    }
+    & .house {
+        background-image: url('../../assets/hamburger-icon-8.svg');
+    }
+    & .gaming {
+        background-image: url('../../assets/hamburger-icon-9.svg');
+    }
+    & .blogers {
+        background-image: url('../../assets/hamburger-icon-10.svg');
+    }
+    & .bag {
+        background-image: url('../../assets/hamburger-icon-11.svg');
+    }
+    & .abatement {
+        background-image: url('../../assets/hamburger-icon-12.svg');
+    }
+    & .different {
+        background-image: url('../../assets/hamburger-icon-13.svg');
+    }
+}
+
+.hamburger[data-visible="false"] {
+    display: none !important;
+}
+
+
+
+
+
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+    .header {
+        &-ui__search {
+            margin-right: 25px;
+            margin-left: 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    
+    .hamburger {
+        padding-left: 0;
+        padding-right: 0;
+        left: 0;
+        top: 100%;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    .header {
+        padding: 16px 0;
+    }
+
+    .header-ui {
+        margin-top: 0;
+        &__search {
+            max-width: 250px;
+            padding: 11px 18px;
+        }
+        &__list-txt {
+            font-size: 8px;
+            margin-top: 5px;
+        }
+        &__list-svg {
+            width: 24px;
+            height: 34px;
+        }
+        &__list-item:not(:last-child) {
+            margin-right: 24px;
+        }
+    }
+
+    .logo {
+        &__title {
+            display: flex;
+        }
+        &__txt {
+            display: none;
+        }
+        &__svg {
+            width: 140px;
+        }
+    }
+
+    .menu {
+        margin-right: 27px;
+        & span {
+            width: 30px;
+            height: 3px;
+        }
+    }
+    .menu::after {
+        display: none;
+    }
+
+    .hamburger {
+        top: 100%;
+        left: 0;
+        &-container {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+    }
+    .hamburger[data-brand-select="true"] {
+        & .hamburger-brand {
+            margin-left: 10px;
+            margin-right: 0;
+        }
+        & .hamburger-brand__list {
+            margin-left: 8px;
+        }
+        & .hamburger-brand__list:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .header-ui {
+        &__search {
+            display: none;
+        }
+        &__list {
+            display: none;
+        }
+    }
+   
+    .hamburger {
+        padding-bottom: 32px;
+        max-width: 714px !important;
+        &-container {
+            max-height: none;
+        }
+        & .category-list {
+            margin-right: 25px;
+        }
+    }
+
+    .hamburger-ui {
+        color: $blue;
+        font-size: 14px;
+        padding: 0 15px;
+        margin-top: 15px;
+        &__nav-item:not(:first-child) {
+            margin-top: 9px;
+        }
+        &__list {
+            margin-top: 20px;
+        }
+        &__list-item {
+            margin-right: 24px;
+        }
+        &__list-link {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__list-svg {
+            width: 24px;
+            height: 28px;
+        }
+        &__list-svg path {
+            fill: $blue;
+        }
+        &__list-txt {
+            font-size: 8px;
+            margin-top: 5px;
+        }
+        &__btn {
+            margin-top: 20px;
+            font-size: 12px;
+            padding: 8px 15px 9px 23px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 586px) {
+    .header {
+        padding: 12px 0 14px 0;
+    }
+    .menu span {
+        width: 23px;
+    }
+    .menu span:not(:last-child) {
+        margin-bottom: 5px;
+    }
+    .hamburger {
+        &-container {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        &-models {
+            display: none;
+        }
+        &-ui {
+            margin-top: 30px;
+        }
+        & .category-list {
+            font-size: 12px;
+        }
+
+        & .category-list__item {
+            background-size: 14px 14px;
+        }
+
+        & .category-list__item:not(:first-child) {
+            margin-top: 13px;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+h1,h2,h3,h4,h5,h6,p,button,div,span,header,footer,section,article,ul {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: none;
+}
+input {
+    outline: none;
+    border: none;
+    background: transparent;
+}

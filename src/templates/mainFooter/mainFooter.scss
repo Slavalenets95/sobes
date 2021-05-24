@@ -1,0 +1,226 @@
+.footer {
+    background: linear-gradient(90deg, #0D2A73 0%, #131E3A 100%);
+    color: $white;
+    padding: 56px 0 6px 0;
+    font-size: 16px;
+    margin-top: 70px;
+
+    &-info {
+        &__list {
+            display: flex;
+            margin-bottom: 18px;
+        }
+
+        &__list-item:not(:first-child) {
+            margin-left: 3px;
+        }
+
+        &__tel {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 9px;
+        }
+
+        &__time {
+            margin-bottom: 32px;
+        }
+
+        &__mail {
+            display: inline-block;
+            margin-top: 9px;
+            font-weight: 700;
+        }
+    }
+
+    &-nav {
+        & .company-list {
+            margin-right: 46px;
+        }
+
+        & .conditions-list {
+            margin-right: 58px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__list-item:not(:last-child) {
+            margin-bottom: 9px;
+        }
+
+        &__list-item:first-child {
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        & .conditions-list &__list-item:last-child {
+            font-weight: 700;
+        }
+    }
+
+    &-ui {
+        &__list-item:not(:first-child) {
+            margin-top: 21px;
+        }
+
+        &__list-link {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__list-txt {
+            font-size: 12px;
+            margin-top: 10px;
+        }
+    }
+
+    &__author {
+        margin-top: 13px;
+        font-size: 14px;
+        text-align: center;
+
+    }
+}
+@media screen and (min-width: 992px) {
+    .footer-nav__list-link:hover {
+        border-bottom: 1px solid $white;
+    }
+}
+@media screen and (max-width: 992px) {
+    .footer {
+        padding: 25px 25px 30px 25px;
+        font-size: 12px;
+        position: relative;
+
+        &-info {
+            & svg {
+                width: 22px;
+                height: 22px;
+            }
+
+            &__list {
+                margin-bottom: 5px;
+            }
+
+            &__tel {
+                font-size: 18px;
+            }
+
+            &__time {
+                margin-bottom: 17px;
+            }
+        }
+
+        &-nav {
+            &__list-item:first-child {
+                font-size: 12px;
+            }
+
+            & .company-list {
+                margin-right: 40px;
+            }
+
+            & .conditions-list {
+                margin-right: 40px;
+            }
+
+            & .conditions-list &__list-item:last-child {
+                margin-top: auto;
+            }
+        }
+
+        &-ui {
+            &__list {
+                display: flex;
+            }
+
+            &__list-item:not(:first-child) {
+                margin-top: 0;
+            }
+
+            &__list-item {
+                display: flex;
+            }
+
+            &__list-item:not(:last-child) {
+                margin-right: 8px;
+            }
+
+            &__list-svg {
+                width: 24px;
+                height: 34px;
+            }
+
+            &__list-svg {
+                margin-bottom: auto;
+            }
+        }
+
+        &__author {
+            position: absolute;
+            right: 40px;
+            bottom: 30px;
+            font-size: 12px;
+        }
+    } 
+}
+
+@media screen and (max-width: 586px) {
+    .footer {
+        font-size: 10px;
+        padding: 25px 0 11px 0;
+
+        &-info {
+            &__tel {
+                font-size: 14px;
+            }
+
+            &__time {
+                margin-bottom: 12px;
+            }
+
+            &__mail {
+                margin-top: 3px;
+            }
+        }
+
+        &-ui {
+            &__list-txt {
+                font-size: 9px;
+                margin-top: 3px;
+            }
+        }
+
+        &-nav {
+            order: 5;
+            margin-top: 33px;
+            width: 100%;
+            justify-content: center;
+
+            &__list-item {
+                white-space: nowrap;
+            }
+
+            &__list-item:first-child {
+                font-size: 10px;
+            }
+
+            &__list-item:not(:last-child) {
+                margin-bottom: 3px;
+            }
+
+            & .company-list {
+                margin-right: 20px;
+            }
+
+            & .conditions-list {
+                margin-right: 20px;
+            }
+        }
+
+        &__author {
+            position: static;
+            margin-top: 40px;
+        }
+    }
+}

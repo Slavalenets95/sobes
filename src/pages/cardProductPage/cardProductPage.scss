@@ -1,0 +1,416 @@
+@import "../../scss/variables";
+
+section {
+    margin-top: 100px;
+}
+
+.title {
+    margin-bottom: 70px;
+}
+
+
+/*******************************START PREVIEW****************************/
+.preview {
+    margin-top: 25px;
+}
+
+.preview-carousel {
+    width: 100%;
+    max-width: 1140px;
+    max-height: 510px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    
+    & > .carousel-indicators {
+        bottom: -40px;
+    }
+
+    & .carousel-indicators button {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #EFEFEF;
+        border: none;
+    }
+
+    & .carousel-indicators button.active {
+        background: $red;
+    }
+
+    &__link {
+        display: block;
+        max-height: 510px;
+    }
+
+    &__img {
+        width: 100%;
+        max-height: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    &__control-btn {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: rgba(196, 196, 196, 0.5);
+        position: absolute;
+        cursor: pointer;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &__prev-btn {
+        left: 18px;
+    }
+
+    &__next-btn {
+        right: 18px;
+    }
+}
+
+/*******************************END PREVIEW****************************/
+
+/*******************************START WEEK-PRODUCTS****************************/
+.week-products { }
+
+
+
+/*******************************END WEEK-PRODUCTS****************************/
+
+/*******************************START PROMOTION****************************/
+.promotion {
+    & a {
+        display: block;
+        width: 100%;
+    }
+    &__img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/*******************************END PROMOTION****************************/
+
+/*******************************START EXCLUSIVELY****************************/
+.exclusively {
+
+    &__content-block>.row>[class*="col-"] {
+        margin-top: 75px;
+    }
+    &__content-block>.row>[class*="col-"]:first-child {
+        margin-top: 0;
+    }
+    &__img {
+        width: 100%;
+        max-width: 385px;
+        max-height: 385px;
+    }
+}
+
+/*******************************END EXCLUSIVELY****************************/
+
+/*******************************START DISCOUNTS****************************/
+.discounts { }
+
+/*******************************END DISCOUNTS****************************/
+
+/*******************************START INSTAGRAM****************************/
+.instagram {
+    &__title {
+        margin-bottom: 0;
+    }
+
+    &__sub-title {
+        margin-top: 12px;
+        font-size: 24px;
+        color: $blue;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    &__img-block {
+        margin-top: 88px;
+    }
+
+    &__img {
+        width: 100%;
+        max-height: 266px;
+        height: 100%;
+    }
+}
+
+/*******************************END INSTAGRAM****************************/
+
+
+/*******************************START OUR-MAGAZINE****************************/
+.our-magazine {
+    & .collapse-wrapper:not(:first-of-type) {
+        margin-top: 14px;
+    }
+
+    & .collapse-wrapper {
+        &__btn {
+            display: flex;
+            align-items: center;
+            padding: 14px 40px 15px 75px;
+            width: 100%;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 14px;
+            font-family: inherit;
+            background: url('../../assets/map-drop-mark.svg') no-repeat left 40px center;
+            cursor: pointer;
+        }
+
+        &__btn[aria-expanded="true"] .collapse-wrapper__svg {
+            transform: rotate(90deg);
+        }
+
+        &__txt {
+            font-size: 28px;
+            font-weight: 300;
+            color: $blue;
+        }
+
+        &__svg {
+            margin-left: auto;
+        }
+
+    }
+
+    & .map {
+        color: $blue;
+        line-height: 1.4;
+        font-size: 22px;
+        margin-top: 24px;
+        padding: 55px 55px 50px 40px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 14px;
+
+        &__txt-content {
+            max-width: 315px;
+            margin-right: auto;
+        }
+
+        &__img {
+            max-width: 580px;
+            height: auto;
+        }
+
+        &__title {
+            font-size: 36px;
+            font-weight: 700;
+        }
+    }
+
+}
+
+/*******************************END OUR-MAGAZINE****************************/
+
+
+
+
+@media screen and (max-width: 992px) {
+
+    .title {
+        margin-bottom: 50px;
+    }
+
+    .preview {
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    .preview-carousel {
+        box-sizing: border-box;
+
+        &__prev-btn {
+            left: 25px;
+        }
+
+        &__next-btn {
+            right: 25px;
+        }
+    }
+
+    .week-products,
+    .discounts {
+        overflow: auto;
+        background: url('../../assets/animate-svg.svg') no-repeat right 10px top 40px;
+        background-size: 75px 42px;
+    }
+
+    .promotion {
+        &__img {
+            max-height: 200px;
+        }
+    }
+
+    .exclusively {
+        &__img {
+            max-width: 165px;
+            max-height: 165px;
+        }
+
+        &__content-block>.row>[class*="col-"] {
+            margin-top: 0;
+        }
+    }
+
+    .instagram {
+
+        &__title {
+            margin-bottom: 0;
+        }
+
+        &__sub-title {
+            font-size: 20px;
+        }
+
+        &__img-block {
+            margin-top: 40px;
+        }
+    }
+
+    .our-magazine {
+
+        & .map {
+            padding: 25px;
+        }
+
+        & .map__txt-content {
+            flex-shrink: 0;
+        }
+
+        & .map__img {
+            max-width: 460px;
+            width: 100%;
+        }
+
+        & .collapse-wrapper {
+            &__txt {
+                font-size: 22px;
+            }
+        }
+    }
+
+    
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .preview {
+        &-carousel__link {
+            height: auto;
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 586px) {
+
+    section {
+        margin-top: 60px;
+    }
+
+    .preview-carousel {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .preview-carousel__control-btn {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & svg {
+            width: 15px;
+            height: 15px;
+        }
+    }
+
+    .week-products {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .week-products,
+    .discounts {
+        background-size: 34px 34px;
+    }
+
+    .promotion {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .exclusively {
+        padding-left: 15px;
+        padding-right: 15px;
+
+
+        &__img {
+            margin: 0 auto;
+        }
+    }
+
+    .discounts {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .instagram {
+
+        &__sub-title {
+            font-size: 16px;
+            max-width: 156px;
+            margin: 0 auto;
+        }
+
+        &__img-block>.row>[class*="col-"]:nth-child(n + 5) {
+            margin-top: 0;
+        }
+    }
+
+    .our-magazine {
+
+        & .collapse-wrapper {
+            &__txt {
+                font-size: 16px;
+            }
+
+            &__btn {
+                background-position: left 20px center;
+                background-size: 14px 24px;
+                padding-left: 50px;
+            }
+
+            &__svg {
+                width: 10px;
+                height: 17px;
+            }
+        }
+
+        & .map {
+            font-size: 12px;
+
+            &__title {
+                font-size: 16px;
+            }
+
+            &__txt-content {
+                max-width: 150px;
+                margin-right: 10px;
+            }
+
+            &__img {
+                min-height: 180px;
+            }
+        }
+    }
+}

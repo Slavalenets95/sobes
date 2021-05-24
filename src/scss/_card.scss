@@ -1,0 +1,203 @@
+.card {
+    box-sizing: border-box;
+    width: 100%;
+    width: 200px;
+    background: $white;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.05);
+    border-radius: 14px;
+    font-size: 14px;
+    position: relative;
+    z-index: 99;
+    &__content {
+        padding: 7px 16px;
+        position: relative;
+        z-index: 99;
+        width: 100%;
+    }
+
+    &__code {
+        color: #D0D0D0;
+        margin-bottom: 15px;
+    }
+
+    &__img {
+        max-width: 100%;
+        height: 220px;
+    }
+
+    &__descr {
+        align-self: flex-start;
+        margin-top: 23px;
+        margin-bottom: 9px;
+        max-width: 140px;
+        letter-spacing: calc(-1em / 25);
+    }
+
+    & .price-block {
+        align-self: flex-start;
+        margin-top: auto;
+        font-weight: 700;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        &__price--discount {
+            color: $red;
+        }
+        &__discount-procent {
+            color: $red;
+        }
+    }
+
+    &__basket-btn {
+        padding: 5px 19px 6px 18px;
+    }
+
+    &__order-btn {
+        padding: 5px 7px 6px 8px;
+        background: none;
+        color: $red;
+        border: 2px solid $red;
+    }
+
+    &__hover-block {
+        width: 100%;
+        padding: 65px 12px 12px 10px;
+        align-content: flex-end;
+        display: none;
+        position: absolute;
+        top: -8px;
+        left: -12px;
+        height: 100%;
+        background: $white;
+        box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.25);
+        border-radius: 14px;
+    }
+
+    &__delivery {
+        width: 100%;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    &__delivery-link {
+        border-bottom: 1px solid $black;
+    }
+    &__icon {
+        position: absolute;
+        z-index: 99;
+        right: 12px;
+    }
+    &__loupe-icon {
+        top: 40px;
+    }
+    &__like-icon {
+        top: 240px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .card:hover {
+        & .card__descr {
+            margin-left: -12px;
+        }
+    
+        & .card__price {
+            margin-left: -12px;
+        }
+    
+        &>.card__hover-block {
+            display: flex;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .card {
+        min-width: 200px;
+        flex-direction: column;
+        &__content {
+            box-sizing: border-box;
+        }
+        &__hover-block {
+            position: static;
+            height: auto;
+            display: flex;
+            align-items: flex-start;
+            padding: 0;
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-bottom: 13px;
+            box-shadow: none;
+            box-sizing: border-box;
+        }
+        &__price {
+            font-size: 13px;
+        }
+        &__basket-btn {
+            font-size: 10px;
+            padding: 5px 17px 6px 17px;
+        }
+        &__order-btn {
+            font-size: 10px;
+            padding: 4px 7px 3px 6px;
+        }
+        &__delivery-link {
+            font-size: 10px;
+        }
+    }
+    .card:not(:last-child) {
+        margin-right: 27px;
+    }
+}
+
+@media screen and (max-width: 586px) {
+    .card {
+        &-block__card {
+            min-width: 140px;
+        }
+        font-size: 10px;
+        &__img {
+            height: 120px;
+        }
+        &__descr {
+            max-width: 100px;
+        }
+        &__content {
+            padding-left: 9px;
+            padding-right: 9px;
+        }
+        & .btn-main {
+            font-size: 6px;
+        }
+        & .card__basket-btn {
+            padding: 4px 14px;
+        }
+        & .card__order-btn {
+            padding: 2px 6px 2px 8px;
+        }
+        &__hover-block {
+            padding-left: 9px;
+            padding-right: 9px;
+        }
+        &__delivery {
+            margin-top: 0;
+        }
+        &__delivery-link {
+            font-size: 6px;
+            margin-top: 7px;
+        }
+        &__loupe-icon {
+            width: 11px;
+            height: 12px;
+            top: 20px;
+        }
+        &__like-icon {
+            width: 11px;
+            height: 11px;
+            top: 140px;
+        }
+        &:not(:last-child) {
+            margin-right: 18px;
+        }
+    }
+}
